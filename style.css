@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+html{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+#nav{
+    padding: 1px;
+    position: absolute;
+    font-size: 25px;
+    right: 50px;
+    top: 40px;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(245, 212, 79);
+    z-index: 10;
+    opacity: 1;
+}
+/*div#Company h1{
+    padding-left: 25px;
+    margin: 0%;
+    position: absolute;
+    top: 10.5%;
+    font-size: 300px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    opacity: 60%;
+    filter: blur(20px);
+    z-index: 10;
+}*/
+div#Company2 h1{
+    padding-left: 25px;
+    margin: 0%;
+    position: absolute;
+    top: 80px;
+    font-size: 300px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    z-index: 10;
+}
+/*div#websites h4{
+    padding-left: 25px;
+    margin: 0%;
+    font-size: 350%;
+    position: absolute;
+    top: 53.5%;
+    left: 20.5px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    opacity: 60%;
+    filter: blur(15px);
+    z-index: 10;
+}*/
+div#websites2 h4{
+    padding-left: 25px;
+    margin: 0%;
+    font-size: 110px;
+    position: absolute;
+    top: 415px;
+    left: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    z-index: 10;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 2;
+
+}
+video#alter{
+    width: 700px;
+    height: 700px;
+    z-index: 6;
+    visibility: hidden;
+}
+.aboutus{
+    color: rgba(245, 212, 79, 0.856);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+#desc{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;    
+}
+.one{
+    position: absolute;
+    left: 800px;
+    top:1300px;
+    height: 400px;
+    width: 600px;
+    transition: all .5s ease;
+    display: block;
+}
+
+.two{
+    position: absolute;
+    top: 1300px;
+    right:800px;
+    height: 400px;
+    width: 600px;
+    transition: all .5s ease;
+    display: block;
+}
+.three{
+    position: absolute;
+    top:1750px;
+    left: 425px;
+    height: 400px;
+    width: 600px;
+    transition: all .5s ease;
+    display: block;
+}
+
+.arrow{
+    height: 90px;
+    width: 80px;
+    position: absolute;
+    top:685px;
+    left: 690px;
+    opacity: 1;
+    z-index: 10;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+.arrow:hover{
+    position: absolute;
+    left: 675px;
+    height: 120px;
+    width: 110px;
+}
+video#projbg{
+    width: 1500px;
+    height: 1500px;
+    position: absolute;
+    top:950px;
+    right:-15px;
+    z-index: 0;
+}
+/*
+.one:hover{
+    height: 800px;
+    width: 1200px;
+    cursor: pointer;
+    z-index:20;
+    position: absolute;
+    left: 300px;
+    top:1200px;
+}
+#testing{
+    position: absolute;
+    font-size: 50px;
+    left: 950px;
+    top:1450px;
+    z-index: 25;
+    color: black;
+}
+.eklo{
+    height: 800px;
+    width: 1200px;
+    cursor: pointer;
+    z-index:20;
+    position: absolute;
+    left: 300px;
+    top:1200px;
+}
+.dolo{
+    height: 800px;
+    width: 1200px;
+    cursor: pointer;
+    z-index:20;
+    position: absolute;
+    right: 300px;
+    top:1200px;
+}
+.two:hover{
+    height: 800px;
+    width: 1200px;
+    cursor: pointer;
+    z-index:20;
+    position: absolute;
+    right: 300px;
+    top:1200px;
+}
+.teenlo{
+    height: 800px;
+    width: 1200px;
+    position: absolute;
+    left:120px;
+    top:1200px;
+    cursor: pointer;
+}
+.three:hover{
+    height: 800px;
+    width: 1200px;
+    position: absolute;
+    left:120px;
+    top:1200px;
+    cursor: pointer;
+}*/
+.contactus{
+    color: white;
+    position: absolute;
+    top: 2300px;
+}
+.smlinks{
+    display: flex;
+    justify-content:space-between;
+    font-size: 25px;
+    position: absolute;
+    top: 600px;
+}
+.imgoverlay1{
+    position: absolute;
+    top:1300px;
+    left:800px;
+    height: 400px;
+    width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.imgoverlay1>*{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.imgoverlay1:hover{
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+.imgoverlay1:hover>*{
+    transform: translateY(0);
+}
+.title{
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+    position: absolute;
+    top:0px;
+    left:180px;
+}
+.imgdesc{
+    font-size: 1.5em;
+    position: absolute;
+    top:60px;
+    left:50px;
+}
+.imgoverlay2{
+    position: absolute;
+    top:1300px;
+    right:800px;
+    height: 400px;
+    width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.imgoverlay2>*{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.imgoverlay2:hover{
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+.imgoverlay2:hover>*{
+    transform: translateY(0);
+}
+.imgoverlay3{
+    position: absolute;
+    top:1750px;
+    left:425px;
+    height: 400px;
+    width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.imgoverlay3>*{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.imgoverlay3:hover{
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+.imgoverlay3:hover>*{
+    transform: translateY(0);
+}
+#title3{
+    left: 240px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: absolute;
+    top: 0.75em;
+    left: 00.5em;
+    z-index: 100;
+}
+.logo::before{
+    content: '';
+    background-image:url(./logovariation2.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 100;
+    
+}
+.logo::after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(245, 209, 6, 0.466);
+    border-radius: 35%;
+    animation: waves 5s ease-in-out alternate infinite;
+    bottom: 0;
+    left: -50%;
+    z-index: 100;
+}
+@keyframes waves {
+    to{
+        transform: translateY(-50%) rotate(720deg);
+    }
+}
+#pricing{
+    position: absolute;
+    top:2200px;
+    left:660px;
+}
+
+#free{
+    position: absolute;
+    top: 120px;
+    left:-600px;
+    transition: transform .3s ease;
+}
+#free:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+#first{
+    position: absolute;
+    top:120px;
+    left:-115px;
+    transition: transform .3s ease;
+}
+#first:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+#second{
+    position: absolute;
+    top:120px;
+    left: 370px;
+    transition: transform .3s ease;
+}
+#second:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
